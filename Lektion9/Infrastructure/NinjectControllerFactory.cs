@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using Ninject;
 using System.Web.Routing;
+using Lektion9.Models.Repositories.Abstract;
+using Lektion9.Models.Repositories;
 
 namespace Lektion9.Infrastructure
 {
@@ -28,7 +30,7 @@ namespace Lektion9.Infrastructure
 
         private void AddBindings()
         {
-            // put additional bindings here
+            ninjectKernel.Bind<IProductRepository>().ToConstant(new FakeProductRepository());
         }
     }
 }

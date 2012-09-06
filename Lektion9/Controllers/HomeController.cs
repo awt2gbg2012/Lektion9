@@ -13,10 +13,6 @@ namespace Lektion9.Controllers
     {
         private IProductRepository Repo;
 
-        public HomeController() : this(new FakeProductRepository())
-        {
-            
-        }
         public HomeController(IProductRepository repo) {
             Repo = repo;
         }
