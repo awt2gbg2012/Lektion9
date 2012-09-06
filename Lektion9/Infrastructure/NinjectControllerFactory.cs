@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
+using Ninject;
+using System.Web.Routing;
 
 namespace Lektion9.Infrastructure
 {
-    /*
     public class NinjectControllerFactory : DefaultControllerFactory
     {
         private IKernel ninjectKernel;
@@ -29,5 +31,4 @@ namespace Lektion9.Infrastructure
             // put additional bindings here
         }
     }
-     * */
 }
