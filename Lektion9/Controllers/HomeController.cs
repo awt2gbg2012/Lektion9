@@ -22,7 +22,8 @@ namespace Lektion9.Controllers
             ViewBag.Message = "Welcome to ASP.NET MVC!";
 
             Product prod = new Product();
-            prod.Name = "Dummy Product - No Repository Interaction";
+            prod.Id = Guid.NewGuid();
+            prod.Name = "Product From DB";
             prod.Price = 35;
             Repo.Add(prod);
             var prod2 = Repo.Products.FirstOrDefault();

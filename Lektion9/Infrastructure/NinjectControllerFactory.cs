@@ -30,7 +30,7 @@ namespace Lektion9.Infrastructure
 
         private void AddBindings()
         {
-            ninjectKernel.Bind<IProductRepository>().ToConstant(new FakeProductRepository());
+            ninjectKernel.Bind<IProductRepository>().ToConstant(new ProductRepository());
         }
     }
 }
